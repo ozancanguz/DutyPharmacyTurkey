@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.ozancanguz.dutypharmacyturkey.data.model.Pharmacy
+import com.ozancanguz.dutypharmacyturkey.data.model.turkey.Pharmacy
 import com.ozancanguz.dutypharmacyturkey.data.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

@@ -1,6 +1,6 @@
 package com.ozancanguz.dutypharmacyturkey.data.api
 
-import com.ozancanguz.dutypharmacyturkey.data.model.Pharmacy
+import com.ozancanguz.dutypharmacyturkey.data.model.turkey.Pharmacy
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Headers

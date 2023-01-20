@@ -1,7 +1,7 @@
 package com.ozancanguz.dutypharmacyturkey.data.remote
 
 import com.ozancanguz.dutypharmacyturkey.data.api.PharmacyApi
-import com.ozancanguz.dutypharmacyturkey.data.model.Pharmacy
+import com.ozancanguz.dutypharmacyturkey.data.model.turkey.Pharmacy
 import retrofit2.Response
 import javax.inject.Inject
 

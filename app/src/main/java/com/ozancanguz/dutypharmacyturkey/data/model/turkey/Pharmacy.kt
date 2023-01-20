@@ -1,8 +1,7 @@
-package com.ozancanguz.dutypharmacyturkey.data.model
+package com.ozancanguz.dutypharmacyturkey.data.model.turkey
 
 
 import com.google.gson.annotations.SerializedName
-import com.ozancanguz.dutypharmacyturkey.data.model.Result
 
 data class Pharmacy(
     @SerializedName("result")

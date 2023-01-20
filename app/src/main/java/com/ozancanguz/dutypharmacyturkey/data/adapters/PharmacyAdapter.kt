@@ -6,16 +6,16 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.dutypharmacyturkey.R
-import com.ozancanguz.dutypharmacyturkey.data.model.Pharmacy
-import com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyList
+import com.ozancanguz.dutypharmacyturkey.data.model.turkey.Pharmacy
+import com.ozancanguz.dutypharmacyturkey.data.model.turkey.Result
 import com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyListDirections
 import kotlinx.android.synthetic.main.rv.view.*
 
 class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>() {
 
-    var pharmacyList= emptyList<com.ozancanguz.dutypharmacyturkey.data.model.Result>()
+    var pharmacyList= emptyList<Result>()
 
-    fun setData(newData:Pharmacy){
+    fun setData(newData: Pharmacy){
         this.pharmacyList=newData.result
         notifyDataSetChanged()
     }
