@@ -29,14 +29,13 @@ class HomeActivity : Fragment() {
         val view = binding.root
 
 
-        binding.navigateKKTC.setOnClickListener {
-            findNavController().navigate(R.id.action_homeActivity_to_KKTCListFragment)
-        }
+       binding.kktcflag.setOnClickListener {
+           findNavController().navigate(R.id.action_homeActivity_to_KKTCListFragment)
+       }
 
-        binding.navigateturkey.setOnClickListener {
+        binding.turkeyflag.setOnClickListener {
             findNavController().navigate(R.id.action_homeActivity_to_dutyPharmacyList)
         }
-
 
         return view
 
