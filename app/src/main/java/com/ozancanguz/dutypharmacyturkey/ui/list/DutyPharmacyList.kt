@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.dutypharmacyturkey.R
 import com.ozancanguz.dutypharmacyturkey.databinding.FragmentDutyPharmacyListBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class DutyPharmacyList : Fragment() {
     private var _binding: FragmentDutyPharmacyListBinding? = null
 
