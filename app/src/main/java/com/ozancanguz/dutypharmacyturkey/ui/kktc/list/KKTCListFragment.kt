@@ -13,6 +13,7 @@ import com.ozancanguz.dutypharmacyturkey.data.adapters.KktcAdapter
 import com.ozancanguz.dutypharmacyturkey.databinding.FragmentKKTCListBinding
 import com.ozancanguz.dutypharmacyturkey.viewmodel.KKTCViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.fragment_k_k_t_c_list.*
 
 @AndroidEntryPoint
 class KKTCListFragment : Fragment() {
@@ -20,8 +21,9 @@ class KKTCListFragment : Fragment() {
     private var _binding: FragmentKKTCListBinding? = null
 
     private val binding get() = _binding!!
-    private val kktcViewModel:KKTCViewModel by viewModels()
 
+
+    private val kktcViewModel:KKTCViewModel by viewModels()
     private var kktcAdapter=KktcAdapter()
 
 
@@ -51,10 +53,12 @@ class KKTCListFragment : Fragment() {
 
     private fun observeKKTCLiveData() {
         binding.kktcsearchbtn.setOnClickListener {
+            kktcProgress.visibility=View.VISIBLE
             var kktcCity=binding.kktcileditText.text.toString()
             kktcViewModel.requestkktcData(kktcCity)
             kktcViewModel.kktcPharmacyList.observe(viewLifecycleOwner, Observer {
                 kktcAdapter.setData(it)
+                kktcProgress.visibility=View.INVISIBLE
             })
 
 
