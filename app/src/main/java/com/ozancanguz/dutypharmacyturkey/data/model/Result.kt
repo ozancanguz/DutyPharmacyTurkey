@@ -1,4 +1,4 @@
-package com.ozancanguz.dutypharmacyturkey.data
+package com.ozancanguz.dutypharmacyturkey.data.model
 
 
 import com.google.gson.annotations.SerializedName
