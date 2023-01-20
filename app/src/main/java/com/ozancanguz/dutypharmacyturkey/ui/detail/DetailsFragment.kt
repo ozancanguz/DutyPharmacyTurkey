@@ -40,7 +40,7 @@ class DetailsFragment : Fragment() {
         binding.detailsName.text=currentPharmacy.name
         binding.detailsAdress.text=currentPharmacy.address
         binding.detailsLce.text=currentPharmacy.dist
-        binding.detailsPhone.text="Phone:" +currentPharmacy.phone
+        binding.detailsPhone.text="Phone: " +currentPharmacy.phone
     }
 
 

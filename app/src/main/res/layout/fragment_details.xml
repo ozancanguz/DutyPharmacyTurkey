@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/dark"
+    >
 
     <ImageView
         android:id="@+id/detailsImage"
@@ -21,6 +23,9 @@
         android:id="@+id/linearLayout2"
         android:layout_width="409dp"
         android:layout_height="254dp"
+
+        android:backgroundTint="#CA5E6E"
+        android:background="#CA5E6E"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingTop="5dp"
@@ -34,6 +39,7 @@
 
         <TextView
             android:id="@+id/detailsName"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -52,6 +58,7 @@
             android:layout_margin="10dp"
             android:gravity="center"
             android:text="İlce"
+            android:textColor="@color/white"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="468dp"></TextView>
@@ -64,6 +71,7 @@
             android:gravity="center"
             android:text="Adress"
             android:textSize="24sp"
+            android:textColor="@color/white"
             tools:layout_editor_absoluteX="7dp"
             tools:layout_editor_absoluteY="419dp"></TextView>
 
@@ -75,6 +83,7 @@
             android:gravity="center"
             android:text="Phone"
             android:textSize="24sp"
+            android:textColor="@color/white"
             tools:layout_editor_absoluteX="7dp"
             tools:layout_editor_absoluteY="372dp"></TextView>
 
