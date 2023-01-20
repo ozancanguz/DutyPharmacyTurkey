@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/numbertext"
+        android:id="@+id/ileditText"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"

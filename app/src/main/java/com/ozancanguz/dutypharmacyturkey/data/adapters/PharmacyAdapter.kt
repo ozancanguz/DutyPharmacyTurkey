@@ -14,6 +14,7 @@ class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>()
 
     fun setData(newData:Pharmacy){
         this.pharmacyList=newData.result
+        notifyDataSetChanged()
     }
 
     class PharmacyViewHolder(view: View):RecyclerView.ViewHolder(view) {
@@ -29,11 +30,11 @@ class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>()
     override fun onBindViewHolder(holder: PharmacyViewHolder, position: Int) {
        val currentPharmacy=pharmacyList[position]
         holder.itemView.iltextview.text=currentPharmacy.name
-        holder.itemView.image_view.setImageResource(R.drawable.img)
+        holder.itemView.image_view.setImageResource(R.drawable.duty)
 
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return pharmacyList.size
     }
 }
