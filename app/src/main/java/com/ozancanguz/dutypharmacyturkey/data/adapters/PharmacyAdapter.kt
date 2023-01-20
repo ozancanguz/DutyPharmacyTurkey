@@ -29,8 +29,8 @@ class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>()
 
     override fun onBindViewHolder(holder: PharmacyViewHolder, position: Int) {
        val currentPharmacy=pharmacyList[position]
-        holder.itemView.iltextview.text=currentPharmacy.name
-        holder.itemView.image_view.setImageResource(R.drawable.duty)
+        holder.itemView.iltextview.text=currentPharmacy.name +" ECZANESİ"
+        holder.itemView.image_view.setImageResource(R.drawable.pharmacy)
 
     }
 

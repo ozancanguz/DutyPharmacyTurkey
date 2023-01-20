@@ -43,10 +43,12 @@ class DutyPharmacyList : Fragment() {
 
     private fun observeLiveData() {
         binding.searchbtn.setOnClickListener {
+            binding.progress.visibility=View.VISIBLE
             val il=binding.ileditText.text.toString()
             dutyPharmacyViewModel.requestApiData(il)
             dutyPharmacyViewModel.dutyPharmacyList.observe(viewLifecycleOwner, Observer {
                 pharmacyAdapter.setData(it)
+                binding.progress.visibility=View.INVISIBLE
             })
         }
 
