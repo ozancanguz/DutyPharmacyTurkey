@@ -17,7 +17,7 @@ class DetailsFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-    private val args: com.ozancanguz.dutypharmacyturkey.ui.detail.DetailsFragmentArgs by navArgs()
+   private  val args:DetailsFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
