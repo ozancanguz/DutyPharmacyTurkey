@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dutyPharmacyList"
-        android:name="com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyList"
+        android:name="com.ozancanguz.dutypharmacyturkey.ui.turkey.list.DutyPharmacyList"
         android:label="Duty Pharmacy"
         tools:layout="@layout/fragment_duty_pharmacy_list" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.ozancanguz.dutypharmacyturkey.ui.detail.DetailsFragment"
+        android:name="com.ozancanguz.dutypharmacyturkey.ui.turkey.detail.DetailsFragment"
         android:label="Details"
         tools:layout="@layout/fragment_details" >
         <argument

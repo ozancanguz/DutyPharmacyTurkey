@@ -1,4 +1,4 @@
-package com.ozancanguz.dutypharmacyturkey.ui.detail
+package com.ozancanguz.dutypharmacyturkey.ui.turkey.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,7 +17,7 @@ class DetailsFragment : Fragment() {
 
     private val binding get() = _binding!!
 
-    private val args:DetailsFragmentArgs by navArgs()
+    private val args: com.ozancanguz.dutypharmacyturkey.ui.detail.DetailsFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

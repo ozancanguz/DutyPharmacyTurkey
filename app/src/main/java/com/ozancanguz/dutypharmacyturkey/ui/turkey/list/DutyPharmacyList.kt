@@ -1,4 +1,4 @@
-package com.ozancanguz.dutypharmacyturkey.ui.list
+package com.ozancanguz.dutypharmacyturkey.ui.turkey.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
