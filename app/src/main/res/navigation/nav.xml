@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/dutyPharmacyList">
+    app:startDestination="@id/homeActivity">
 
     <fragment
         android:id="@+id/dutyPharmacyList"
@@ -30,4 +30,16 @@
         android:id="@+id/KKTCListFragment"
         android:name="com.ozancanguz.dutypharmacyturkey.ui.kktc.list.KKTCListFragment"
         android:label="KKTCListFragment" />
+    <fragment
+        android:id="@+id/homeActivity"
+        android:name="com.ozancanguz.dutypharmacyturkey.ui.home.HomeActivity"
+        android:label="fragment_home_activity"
+        tools:layout="@layout/fragment_home_activity" >
+        <action
+            android:id="@+id/action_homeActivity_to_dutyPharmacyList"
+            app:destination="@id/dutyPharmacyList" />
+        <action
+            android:id="@+id/action_homeActivity_to_KKTCListFragment"
+            app:destination="@id/KKTCListFragment" />
+    </fragment>
 </navigation>
