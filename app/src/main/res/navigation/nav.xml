@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/dutyPharmacyList">
+
+    <fragment
+        android:id="@+id/dutyPharmacyList"
+        android:name="com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyList"
+        android:label="Duty Pharmacy"
+        tools:layout="@layout/fragment_duty_pharmacy_list" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ozancanguz.dutypharmacyturkey.ui.detail.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details" />
+</navigation>

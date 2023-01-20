@@ -1,7 +1,8 @@
-package com.ozancanguz.dutypharmacyturkey
+package com.ozancanguz.dutypharmacyturkey.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ozancanguz.dutypharmacyturkey.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
