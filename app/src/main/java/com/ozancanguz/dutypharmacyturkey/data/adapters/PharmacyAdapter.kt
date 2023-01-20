@@ -38,7 +38,7 @@ class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>()
 
         holder.itemView.setOnClickListener {
 
-          val action= DutyPharmacyListDirections.actionDutyPharmacyListToDetailsFragment(currentPharmacy)
+        val action=DutyPharmacyListDirections.actionDutyPharmacyListToDetailsFragment(currentPharmacy)
             holder.itemView.findNavController().navigate(action)
         }
     }

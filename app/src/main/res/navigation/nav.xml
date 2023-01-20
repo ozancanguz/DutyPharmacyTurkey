@@ -29,7 +29,11 @@
     <fragment
         android:id="@+id/KKTCListFragment"
         android:name="com.ozancanguz.dutypharmacyturkey.ui.kktc.list.KKTCListFragment"
-        android:label="KKTCListFragment" />
+        android:label="KKTCListFragment" >
+        <action
+            android:id="@+id/action_KKTCListFragment_to_kktcDetailFragment"
+            app:destination="@id/kktcDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeActivity"
         android:name="com.ozancanguz.dutypharmacyturkey.ui.home.HomeActivity"
@@ -41,5 +45,14 @@
         <action
             android:id="@+id/action_homeActivity_to_KKTCListFragment"
             app:destination="@id/KKTCListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kktcDetailFragment"
+        android:name="com.ozancanguz.dutypharmacyturkey.ui.kktc.detail.KktcDetailFragment"
+        android:label="fragment_kktc_detail"
+        tools:layout="@layout/fragment_kktc_detail" >
+        <argument
+            android:name="CurrentKKTC"
+            app:argType="com.ozancanguz.dutypharmacyturkey.data.model.kktc.KktcResult" />
     </fragment>
 </navigation>

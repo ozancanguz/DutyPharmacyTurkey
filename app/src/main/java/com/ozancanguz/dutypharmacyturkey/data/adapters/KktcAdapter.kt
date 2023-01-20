@@ -3,9 +3,11 @@ package com.ozancanguz.dutypharmacyturkey.data.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.dutypharmacyturkey.R
 import com.ozancanguz.dutypharmacyturkey.data.model.kktc.KktcPharmacy
+import com.ozancanguz.dutypharmacyturkey.ui.kktc.list.KKTCListFragmentDirections
 import kotlinx.android.synthetic.main.kktc_rv.view.*
 
 class KktcAdapter:RecyclerView.Adapter<KktcAdapter.KKTCViewHolder>() {
@@ -32,6 +34,14 @@ class KktcAdapter:RecyclerView.Adapter<KktcAdapter.KKTCViewHolder>() {
         var currentKktcPharmacy=kktcList[position]
         holder.itemView.kktciltextview.text=currentKktcPharmacy.name
         holder.itemView.kktcimage_view.setImageResource(R.drawable.pharmacy)
+
+        holder.itemView.setOnClickListener{
+            val direction=KKTCListFragmentDirections.actionKKTCListFragmentToKktcDetailFragment(currentKktcPharmacy)
+            holder.itemView.findNavController().navigate(direction)
+
+        }
+
+
     }
 
     override fun getItemCount(): Int {

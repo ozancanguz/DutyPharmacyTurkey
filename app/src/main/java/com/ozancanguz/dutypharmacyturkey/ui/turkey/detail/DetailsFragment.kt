@@ -37,10 +37,10 @@ class DetailsFragment : Fragment() {
     private fun updateUi() {
         var currentPharmacy=args.currentPharmacy
         binding.detailsImage.setImageResource(R.drawable.duty)
-        binding.detailsName.text=currentPharmacy.name
+        binding.detailsName.text=currentPharmacy.name + "ECZANESİ"
         binding.detailsAdress.text=currentPharmacy.address
-        binding.detailsLce.text=currentPharmacy.dist
-        binding.detailsPhone.text="Phone: " +currentPharmacy.phone
+        binding.detailsLce.text="İLCE: " +currentPharmacy.dist
+        binding.detailsPhone.text="TELEFON: " +currentPharmacy.phone
     }
 
 
