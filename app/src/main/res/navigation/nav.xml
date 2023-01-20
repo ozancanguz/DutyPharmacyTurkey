@@ -9,10 +9,18 @@
         android:id="@+id/dutyPharmacyList"
         android:name="com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyList"
         android:label="Duty Pharmacy"
-        tools:layout="@layout/fragment_duty_pharmacy_list" />
+        tools:layout="@layout/fragment_duty_pharmacy_list" >
+        <action
+            android:id="@+id/action_dutyPharmacyList_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.ozancanguz.dutypharmacyturkey.ui.detail.DetailsFragment"
         android:label="Details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="CurrentPharmacy"
+            app:argType="com.ozancanguz.dutypharmacyturkey.data.model.Result" />
+    </fragment>
 </navigation>

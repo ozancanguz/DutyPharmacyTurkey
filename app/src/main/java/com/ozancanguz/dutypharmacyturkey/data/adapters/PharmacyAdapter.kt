@@ -3,9 +3,12 @@ package com.ozancanguz.dutypharmacyturkey.data.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.dutypharmacyturkey.R
 import com.ozancanguz.dutypharmacyturkey.data.model.Pharmacy
+import com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyList
+import com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyListDirections
 import kotlinx.android.synthetic.main.rv.view.*
 
 class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>() {
@@ -32,6 +35,11 @@ class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>()
         holder.itemView.iltextview.text=currentPharmacy.name +" ECZANESİ"
         holder.itemView.image_view.setImageResource(R.drawable.pharmacy)
 
+        holder.itemView.setOnClickListener {
+
+            val action=DutyPharmacyListDirections.actionDutyPharmacyListToDetailsFragment(currentPharmacy)
+            holder.itemView.findNavController().navigate(action)
+        }
     }
 
     override fun getItemCount(): Int {
