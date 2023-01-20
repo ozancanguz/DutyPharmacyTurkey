@@ -8,12 +8,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.dutypharmacyturkey.R
 import com.ozancanguz.dutypharmacyturkey.data.model.turkey.Pharmacy
 import com.ozancanguz.dutypharmacyturkey.data.model.turkey.Result
-import com.ozancanguz.dutypharmacyturkey.ui.list.DutyPharmacyListDirections
+
+import com.ozancanguz.dutypharmacyturkey.ui.turkey.list.DutyPharmacyListDirections
 import kotlinx.android.synthetic.main.rv.view.*
 
 class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>() {
 
-    var pharmacyList= emptyList<Result>()
+    var pharmacyList= emptyList<com.ozancanguz.dutypharmacyturkey.data.model.turkey.Result>()
 
     fun setData(newData: Pharmacy){
         this.pharmacyList=newData.result
@@ -37,8 +38,8 @@ class PharmacyAdapter:RecyclerView.Adapter<PharmacyAdapter.PharmacyViewHolder>()
 
         holder.itemView.setOnClickListener {
 
-            val action=DutyPharmacyListDirections.actionDutyPharmacyListToDetailsFragment(currentPharmacy)
-            holder.itemView.findNavController().navigate(action)
+          //  val action= DutyPharmacyListDirections.actionDutyPharmacyListToDetailsFragment(currentPharmacy)
+            //holder.itemView.findNavController().navigate(action)
         }
     }
 

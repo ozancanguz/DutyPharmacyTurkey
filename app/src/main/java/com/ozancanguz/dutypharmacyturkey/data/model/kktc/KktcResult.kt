@@ -1,9 +1,12 @@
 package com.ozancanguz.dutypharmacyturkey.data.model.kktc
 
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
-data class Result(
+@Parcelize
+data class KktcResult(
     @SerializedName("address")
     val address: String,
     @SerializedName("dist")
@@ -14,4 +17,4 @@ data class Result(
     val name: String,
     @SerializedName("phone")
     val phone: String
-)
+):Parcelable

@@ -39,7 +39,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kktcsearchbtn"
-        tools:listitem="@layout/rv" />
+        tools:listitem="@layout/kktc_rv" />
 
     <Button
         android:id="@+id/kktcsearchbtn"

@@ -23,4 +23,8 @@
             android:name="CurrentPharmacy"
             app:argType="com.ozancanguz.dutypharmacyturkey.data.model.Result" />
     </fragment>
+    <fragment
+        android:id="@+id/KKTCListFragment"
+        android:name="com.ozancanguz.dutypharmacyturkey.ui.kktc.list.KKTCListFragment"
+        android:label="KKTCListFragment" />
 </navigation>

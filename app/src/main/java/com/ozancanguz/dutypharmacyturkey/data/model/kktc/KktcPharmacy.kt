@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class KktcPharmacy(
     @SerializedName("result")
-    val result: List<Result>,
+    val kktcResult: List<KktcResult>,
     @SerializedName("success")
     val success: Boolean
 )
